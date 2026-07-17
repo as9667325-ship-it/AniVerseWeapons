@@ -1,0 +1,61 @@
+# Ability System Configuration
+
+abilities:
+  max-mana: 100
+  mana-regen: 0.5
+  mana-regen-tick: 20
+
+  ability-unlock-levels:
+    passive: 1
+    active: 10
+    ultimate: 50
+
+  cooldown-actionbar: true
+  cooldown-title: true
+
+passive-abilities:
+  passive_health_boost:
+    name: "Health Boost"
+    description: "Increase max health by 2 per level"
+    mana-cost: 0
+    stat-bonus:
+      health: 2
+
+  passive_damage_boost:
+    name: "Damage Boost"
+    description: "Increase damage by 5% per level"
+    mana-cost: 0
+    stat-bonus:
+      damage: 1.05
+
+active-abilities:
+  active_fireball:
+    name: "Fireball"
+    description: "Launch a fireball dealing damage"
+    mana-cost: 30
+    cooldown: 5
+    damage-multiplier: 2.0
+    effect: "FIREBALL"
+
+  active_frost_nova:
+    name: "Frost Nova"
+    description: "Freeze nearby enemies"
+    mana-cost: 25
+    cooldown: 6
+    effect: "FROST_NOVA"
+
+ultimate-abilities:
+  ultimate_meteors:
+    name: "Meteor Storm"
+    description: "Call meteors from the sky"
+    mana-cost: 100
+    cooldown: 30
+    damage-multiplier: 5.0
+    effect: "METEOR_STORM"
+
+  ultimate_time_warp:
+    name: "Time Warp"
+    description: "Warp through time"
+    mana-cost: 100
+    cooldown: 40
+    effect: "TIME_WARP"

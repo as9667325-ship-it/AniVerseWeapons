@@ -1,0 +1,31 @@
+# Weapon Upgrade Configuration
+
+upgrades:
+  max-level: 15
+  base-success-chance: 0.90
+  success-chance-per-level: -0.05
+  safe-scroll-bonus: 1.0
+  protection-scroll-bonus: 0.5
+
+  animations:
+    enabled: true
+    success-particles: "ENCHANTMENT_TABLE"
+    success-sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    success-color: "0,255,0"
+    failure-particles: "SMOKE"
+    failure-sound: "ENTITY_ZOMBIE_BREAK_WOODEN_DOOR"
+    failure-color: "255,0,0"
+
+  downgrade-on-fail: true
+  downgrade-levels: 1
+  destroy-on-fail-over-10: true
+
+stats-multipliers:
+  per-level:
+    damage: 1.08
+    critical-chance: 0.05
+    critical-damage: 0.10
+    attack-speed: 0.02
+    ability-damage: 1.08
+    lifesteal: 0.01
+    defense-penetration: 0.02

@@ -1,0 +1,40 @@
+# GUI Configuration
+
+gui:
+  main-menu:
+    title: "&b&lAniVerse Weapons"
+    size: 54
+    background-item: "GRAY_STAINED_GLASS_PANE"
+
+  weapon-list:
+    title: "&b&lWeapon Collection"
+    size: 54
+    items-per-page: 45
+    sort-by: "rarity" # rarity, name, damage, level
+
+  categories:
+    - swords
+    - axes
+    - staffs
+    - bows
+    - daggers
+    - scythes
+    - hammers
+    - other
+
+  search:
+    enabled: true
+    max-results: 45
+
+  pagination:
+    enabled: true
+    next-page-slot: 51
+    prev-page-slot: 47
+    current-page-slot: 49
+    back-button-slot: 45
+
+  buttons:
+    next-page: "ARROW"
+    prev-page: "ARROW"
+    search: "BOOK"
+    close: "BARRIER"

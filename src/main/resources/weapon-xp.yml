@@ -1,0 +1,39 @@
+# Weapon XP Configuration
+
+weapon-xp:
+  max-level: 100
+
+  level-requirements:
+    1-10: 100
+    11-25: 250
+    26-50: 500
+    51-75: 1000
+    76-100: 2000
+
+  xp-sources:
+    mob-kill: 50
+    player-kill: 200
+    ability-hit: 75
+    boss-kill: 500
+
+  level-milestones:
+    10:
+      reward: "Unlock Active Ability"
+      particles: true
+      broadcast: true
+    25:
+      reward: "Bonus Stats +10%"
+      particles: true
+      broadcast: true
+    50:
+      reward: "Unlock Ultimate Ability"
+      particles: true
+      broadcast: true
+    75:
+      reward: "Bonus Stats +20%"
+      particles: true
+      broadcast: true
+    100:
+      reward: "Weapon Transcendence"
+      particles: true
+      broadcast: true
