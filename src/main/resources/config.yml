@@ -1,0 +1,45 @@
+# AniVerseWeapons Configuration
+# Main configuration file for the plugin
+
+plugin:
+  version: 1.0.0
+  debug: false
+  check-updates: true
+
+# Global particle and sound settings
+particles:
+  enabled: true
+  quality: high # high, medium, low
+  distance: 32
+
+sounds:
+  enabled: true
+  volume: 1.0
+  pitch: 1.0
+
+# Resource pack settings
+resource-pack:
+  enabled: true
+  prompt-on-join: true
+  required: false
+  url: 'https://example.com/aniverse-weapons.zip'
+  sha1: 'abc123...'
+
+# Cooldown settings (in seconds)
+cooldowns:
+  default: 1
+  global-per-player: false
+
+# Messages
+messages:
+  prefix: '&b[AniVerseWeapons] &r'
+  weapon-given: '{prefix}&aYou have been given &e{weapon}&a!'
+  weapon-received: '{prefix}&a{player} &ahas given you &e{weapon}&a!'
+  cooldown-active: '{prefix}&cWeapon is on cooldown for &e{time}&cs!'
+  no-permission: '{prefix}&cYou do not have permission to use this command!'
+  weapon-not-found: '{prefix}&cWeapon &e{weapon}&c not found!'
+  player-not-found: '{prefix}&cPlayer &e{player}&c not found!'
+  config-reloaded: '{prefix}&aConfiguration reloaded successfully!'
+  weapon-list-header: '{prefix}&eAvailable Weapons:'
+  weapon-list-item: '{prefix}&7- &e{weapon} &7({damage} damage, {cooldown}s cooldown)'
+  unknown-command: '{prefix}&cUnknown subcommand. Use &e/avweapons list &cfor help.'

@@ -1,0 +1,61 @@
+name: AniVerseWeapons
+version: '1.0.0'
+main: com.aniverse.weapons.AniVerseWeapons
+description: A comprehensive custom weapons plugin for Paper 1.21.x
+authors:
+  - AniVerse
+website: https://aniverse.com
+
+permissions:
+  avweapons.admin:
+    description: Access to all AniVerseWeapons commands
+    default: op
+  avweapons.give:
+    description: Permission to give weapons
+    default: op
+  avweapons.reload:
+    description: Permission to reload configuration
+    default: op
+  avweapons.list:
+    description: Permission to list weapons
+    default: true
+  avweapons.use.*:
+    description: Permission to use all weapons
+    default: true
+  avweapons.use.phoenix_blade:
+    description: Permission to use Phoenix Blade
+    default: true
+  avweapons.use.frost_staff:
+    description: Permission to use Frost Staff
+    default: true
+  avweapons.use.shadow_dagger:
+    description: Permission to use Shadow Dagger
+    default: true
+  avweapons.use.lightning_hammer:
+    description: Permission to use Lightning Hammer
+    default: true
+  avweapons.use.inferno_bow:
+    description: Permission to use Inferno Bow
+    default: true
+  avweapons.use.void_scythe:
+    description: Permission to use Void Scythe
+    default: true
+  avweapons.use.crystal_staff:
+    description: Permission to use Crystal Staff
+    default: true
+  avweapons.use.obsidian_axe:
+    description: Permission to use Obsidian Axe
+    default: true
+  avweapons.use.celestial_sword:
+    description: Permission to use Celestial Sword
+    default: true
+  avweapons.use.temporal_pickaxe:
+    description: Permission to use Temporal Pickaxe
+    default: true
+
+commands:
+  avweapons:
+    description: Main AniVerseWeapons command
+    usage: '/avweapons <give|reload|list> [player] [weapon]'
+    aliases: [avw]
+    permission: avweapons.admin

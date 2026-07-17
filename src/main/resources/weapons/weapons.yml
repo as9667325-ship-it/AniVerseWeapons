@@ -1,0 +1,588 @@
+# Weapons Configuration
+# Define all custom weapons here
+
+weapons:
+  # === FULLY IMPLEMENTED WEAPONS ===
+  
+  phoenix_blade:
+    display-name: "&cPhoenix Blade"
+    material: "DIAMOND_SWORD"
+    custom-model-data: 1001
+    damage: 12.0
+    cooldown: 2.0
+    description:
+      - "&7A legendary blade wreathed in flames"
+      - "&7Right-click to ignite enemies"
+    particles:
+      ability: "FLAME"
+      ability-count: 20
+      ability-color: "255,100,0"
+      trail: "FLAME"
+      trail-count: 5
+    sounds:
+      use: "ITEM_FIRECHARGE_USE"
+      hit: "BLOCK_FIRE_EXTINGUISH"
+    ability:
+      type: "fire_burst"
+      radius: 8.0
+      damage: 15.0
+      ignite-duration: 3
+  
+  frost_staff:
+    display-name: "&bFrost Staff"
+    material: "STICK"
+    custom-model-data: 1002
+    damage: 8.0
+    cooldown: 3.0
+    description:
+      - "&7An icy staff that freezes foes"
+      - "&7Right-click to unleash a frozen wave"
+    particles:
+      ability: "ITEM_CRACK"
+      ability-count: 30
+      ability-color: "100,200,255"
+      trail: "CLOUD"
+      trail-count: 10
+    sounds:
+      use: "BLOCK_GLASS_BREAK"
+      hit: "BLOCK_GLASS_PLACE"
+    ability:
+      type: "freeze_wave"
+      radius: 12.0
+      slowness-duration: 4
+      slowness-amplifier: 2
+  
+  shadow_dagger:
+    display-name: "&8Shadow Dagger"
+    material: "IRON_SWORD"
+    custom-model-data: 1003
+    damage: 10.0
+    cooldown: 1.5
+    description:
+      - "&7A deadly dagger from the shadows"
+      - "&7Right-click to dash and strike"
+    particles:
+      ability: "SMOKE"
+      ability-count: 25
+      ability-color: "50,50,50"
+      trail: "SHADOW"
+      trail-count: 8
+    sounds:
+      use: "ENTITY_ENDERMAN_TELEPORT"
+      hit: "ENTITY_ARROW_HIT_PLAYER"
+    ability:
+      type: "shadow_dash"
+      distance: 15.0
+      damage: 20.0
+      cooldown-multiplier: 1.5
+  
+  lightning_hammer:
+    display-name: "&eThunder Hammer"
+    material: "DIAMOND_AXE"
+    custom-model-data: 1004
+    damage: 14.0
+    cooldown: 3.5
+    description:
+      - "&7A mighty hammer crackling with energy"
+      - "&7Right-click to call down lightning"
+    particles:
+      ability: "ELECTRIC_SPARK"
+      ability-count: 40
+      ability-color: "255,255,0"
+      trail: "ELECTRIC_SPARK"
+      trail-count: 15
+    sounds:
+      use: "ENTITY_LIGHTNING_BOLT_THUNDER"
+      hit: "BLOCK_DISPENSER_DISPENSE"
+    ability:
+      type: "lightning_strike"
+      radius: 10.0
+      damage: 18.0
+      knockback: 3.0
+  
+  inferno_bow:
+    display-name: "&cInferno Bow"
+    material: "BOW"
+    custom-model-data: 1005
+    damage: 11.0
+    cooldown: 2.5
+    description:
+      - "&7A bow that fires arrows of pure flame"
+      - "&7Right-click to ignite arrows"
+    particles:
+      ability: "FLAME"
+      ability-count: 35
+      ability-color: "255,100,0"
+      trail: "FLAME"
+      trail-count: 12
+    sounds:
+      use: "ITEM_BOW_FIRE"
+      hit: "ENTITY_ARROW_HIT"
+    ability:
+      type: "inferno_shot"
+      damage: 20.0
+      ignite-duration: 5
+      spread: 3
+  
+  void_scythe:
+    display-name: "&5Void Scythe"
+    material: "DIAMOND_SPADE"
+    custom-model-data: 1006
+    damage: 13.0
+    cooldown: 2.8
+    description:
+      - "&7A scythe channeling void energy"
+      - "&7Right-click to pull enemies closer"
+    particles:
+      ability: "DRAGON_BREATH"
+      ability-count: 28
+      ability-color: "150,0,200"
+      trail: "SPELL_WITCH"
+      trail-count: 9
+    sounds:
+      use: "ENTITY_ENDER_DRAGON_GROWL"
+      hit: "ENTITY_ENDER_DRAGON_HURT"
+    ability:
+      type: "void_pull"
+      radius: 14.0
+      pull-strength: 2.0
+      damage: 16.0
+  
+  crystal_staff:
+    display-name: "&bCrystal Staff"
+    material: "STICK"
+    custom-model-data: 1007
+    damage: 9.0
+    cooldown: 2.2
+    description:
+      - "&7A staff of hardened crystal"
+      - "&7Right-click to summon crystal barriers"
+    particles:
+      ability: "END_ROD"
+      ability-count: 32
+      ability-color: "0,255,255"
+      trail: "END_ROD"
+      trail-count: 10
+    sounds:
+      use: "BLOCK_GLASS_BREAK"
+      hit: "BLOCK_CRYSTAL_CHIME"
+    ability:
+      type: "crystal_barrier"
+      duration: 8.0
+      absorption: 10.0
+      radius: 6.0
+  
+  obsidian_axe:
+    display-name: "&8Obsidian Axe"
+    material: "DIAMOND_AXE"
+    custom-model-data: 1008
+    damage: 13.5
+    cooldown: 3.0
+    description:
+      - "&7An axe forged from obsidian"
+      - "&7Right-click to shatter ground"
+    particles:
+      ability: "BLOCK_DUST"
+      ability-count: 36
+      ability-color: "30,30,50"
+      trail: "SMOKE"
+      trail-count: 11
+    sounds:
+      use: "BLOCK_STONE_BREAK"
+      hit: "BLOCK_STONE_PLACE"
+    ability:
+      type: "ground_shatter"
+      radius: 11.0
+      damage: 17.0
+      knockback: 2.5
+  
+  celestial_sword:
+    display-name: "&eC&belestial &eSword"
+    material: "DIAMOND_SWORD"
+    custom-model-data: 1009
+    damage: 12.5
+    cooldown: 2.3
+    description:
+      - "&7A sword blessed by celestial powers"
+      - "&7Right-click to heal and damage"
+    particles:
+      ability: "ENCHANTMENT_TABLE"
+      ability-count: 38
+      ability-color: "100,200,255"
+      trail: "ENCHANTMENT_TABLE"
+      trail-count: 13
+    sounds:
+      use: "ENTITY_EXPERIENCE_ORB_PICKUP"
+      hit: "BLOCK_NOTE_BLOCK_CHIME"
+    ability:
+      type: "celestial_slash"
+      radius: 9.0
+      damage: 19.0
+      heal: 6.0
+  
+  temporal_pickaxe:
+    display-name: "&dTemporal Pickaxe"
+    material: "DIAMOND_PICKAXE"
+    custom-model-data: 1010
+    damage: 11.5
+    cooldown: 3.2
+    description:
+      - "&7A pickaxe that bends time"
+      - "&7Right-click to slow time around you"
+    particles:
+      ability: "GLOW_SQUID_INK"
+      ability-count: 42
+      ability-color: "200,0,255"
+      trail: "WITCH"
+      trail-count: 14
+    sounds:
+      use: "BLOCK_AMETHYST_CLUSTER_HIT"
+      hit: "BLOCK_AMETHYST_BLOCK_PLACE"
+    ability:
+      type: "time_slow"
+      radius: 10.0
+      slowness-duration: 5
+      slowness-amplifier: 1
+      cooldown-multiplier: 2.0
+  
+  # === FRAMEWORK WEAPONS (20 MORE) ===
+  
+  infernal_mace:
+    display-name: "&cInfernal Mace"
+    material: "DIAMOND_AXE"
+    custom-model-data: 1011
+    damage: 15.0
+    cooldown: 3.8
+    description:
+      - "&7A mace wreathed in hellfire"
+    particles:
+      ability: "FLAME"
+      ability-count: 25
+    sounds:
+      use: "ITEM_FIRECHARGE_USE"
+      hit: "ENTITY_BLAZE_HURT"
+    ability:
+      type: "framework"
+  
+  aquatic_trident:
+    display-name: "&1Aquatic Trident"
+    material: "TRIDENT"
+    custom-model-data: 1012
+    damage: 10.5
+    cooldown: 2.5
+    description:
+      - "&7A trident blessed by the seas"
+    particles:
+      ability: "WATER_SPLASH"
+      ability-count: 20
+    sounds:
+      use: "ENTITY_PLAYER_SPLASH"
+      hit: "ENTITY_FISH_SWIM"
+    ability:
+      type: "framework"
+  
+  forest_bow:
+    display-name: "&2Forest Bow"
+    material: "BOW"
+    custom-model-data: 1013
+    damage: 9.0
+    cooldown: 2.0
+    description:
+      - "&7A bow of natural wood"
+    particles:
+      ability: "HAPPY_VILLAGER"
+      ability-count: 15
+    sounds:
+      use: "ITEM_BOW_FIRE"
+      hit: "BLOCK_GRASS_PLACE"
+    ability:
+      type: "framework"
+  
+  titan_sword:
+    display-name: "&7Titan Sword"
+    material: "DIAMOND_SWORD"
+    custom-model-data: 1014
+    damage: 16.0
+    cooldown: 4.0
+    description:
+      - "&7A colossal blade of titans"
+    particles:
+      ability: "SMOKE"
+      ability-count: 30
+    sounds:
+      use: "ENTITY_IRONGOLEM_DEATH"
+      hit: "BLOCK_STONE_PLACE"
+    ability:
+      type: "framework"
+  
+  spectral_staff:
+    display-name: "&fSpectral Staff"
+    material: "STICK"
+    custom-model-data: 1015
+    damage: 8.5
+    cooldown: 2.1
+    description:
+      - "&7A staff of spectral energy"
+    particles:
+      ability: "SMOKE"
+      ability-count: 22
+    sounds:
+      use: "ENTITY_GHOST_AMBIENT"
+      hit: "BLOCK_GLASS_BREAK"
+    ability:
+      type: "framework"
+  
+  dragon_claw:
+    display-name: "&5Dragon Claw"
+    material: "IRON_SWORD"
+    custom-model-data: 1016
+    damage: 13.0
+    cooldown: 3.3
+    description:
+      - "&7A claw of a fallen dragon"
+    particles:
+      ability: "DRAGON_BREATH"
+      ability-count: 28
+    sounds:
+      use: "ENTITY_ENDER_DRAGON_GROWL"
+      hit: "ENTITY_ENDER_DRAGON_HURT"
+    ability:
+      type: "framework"
+  
+  cursed_scythe:
+    display-name: "&8Cursed Scythe"
+    material: "DIAMOND_SPADE"
+    custom-model-data: 1017
+    damage: 12.0
+    cooldown: 2.9
+    description:
+      - "&7A cursed weapon of death"
+    particles:
+      ability: "SPELL_WITCH"
+      ability-count: 24
+    sounds:
+      use: "ENTITY_ZOMBIE_DEATH"
+      hit: "ENTITY_WITHER_HURT"
+    ability:
+      type: "framework"
+  
+  holy_mace:
+    display-name: "&eHoly Mace"
+    material: "DIAMOND_AXE"
+    custom-model-data: 1018
+    damage: 14.0
+    cooldown: 3.5
+    description:
+      - "&7A mace blessed by holy power"
+    particles:
+      ability: "ENCHANTMENT_TABLE"
+      ability-count: 26
+    sounds:
+      use: "ENTITY_EXPERIENCE_ORB_PICKUP"
+      hit: "BLOCK_NOTE_BLOCK_CHIME"
+    ability:
+      type: "framework"
+  
+  storm_staff:
+    display-name: "&fStorm Staff"
+    material: "STICK"
+    custom-model-data: 1019
+    damage: 10.0
+    cooldown: 2.8
+    description:
+      - "&7A staff commanding the storm"
+    particles:
+      ability: "ELECTRIC_SPARK"
+      ability-count: 32
+    sounds:
+      use: "ENTITY_LIGHTNING_BOLT_THUNDER"
+      hit: "BLOCK_DISPENSER_DISPENSE"
+    ability:
+      type: "framework"
+  
+  void_blade:
+    display-name: "&5Void Blade"
+    material: "DIAMOND_SWORD"
+    custom-model-data: 1020
+    damage: 14.5
+    cooldown: 3.2
+    description:
+      - "&7A blade from the void itself"
+    particles:
+      ability: "DRAGON_BREATH"
+      ability-count: 29
+    sounds:
+      use: "ENTITY_ENDER_DRAGON_GROWL"
+      hit: "ENTITY_ENDERMAN_DEATH"
+    ability:
+      type: "framework"
+  
+  solar_bow:
+    display-name: "&6Solar Bow"
+    material: "BOW"
+    custom-model-data: 1021
+    damage: 11.0
+    cooldown: 2.4
+    description:
+      - "&7A bow powered by the sun"
+    particles:
+      ability: "FLAME"
+      ability-count: 27
+    sounds:
+      use: "ITEM_BOW_FIRE"
+      hit: "ENTITY_ARROW_HIT"
+    ability:
+      type: "framework"
+  
+  lunar_dagger:
+    display-name: "&fLunar Dagger"
+    material: "IRON_SWORD"
+    custom-model-data: 1022
+    damage: 9.5
+    cooldown: 1.8
+    description:
+      - "&7A dagger blessed by moonlight"
+    particles:
+      ability: "END_ROD"
+      ability-count: 23
+    sounds:
+      use: "ENTITY_ENDERMAN_TELEPORT"
+      hit: "BLOCK_GLASS_PLACE"
+    ability:
+      type: "framework"
+  
+  magma_hammer:
+    display-name: "&cMagma Hammer"
+    material: "DIAMOND_AXE"
+    custom-model-data: 1023
+    damage: 13.5
+    cooldown: 3.4
+    description:
+      - "&7A hammer forged in lava"
+    particles:
+      ability: "FLAME"
+      ability-count: 25
+    sounds:
+      use: "ITEM_FIRECHARGE_USE"
+      hit: "BLOCK_LAVA_EXTINGUISH"
+    ability:
+      type: "framework"
+  
+  glacier_staff:
+    display-name: "&bGlacier Staff"
+    material: "STICK"
+    custom-model-data: 1024
+    damage: 8.0
+    cooldown: 2.6
+    description:
+      - "&7A staff of eternal winter"
+    particles:
+      ability: "CLOUD"
+      ability-count: 31
+    sounds:
+      use: "BLOCK_GLASS_BREAK"
+      hit: "BLOCK_GLASS_PLACE"
+    ability:
+      type: "framework"
+  
+  shadowflame_sword:
+    display-name: "&8Shadowflame Sword"
+    material: "DIAMOND_SWORD"
+    custom-model-data: 1025
+    damage: 15.0
+    cooldown: 3.7
+    description:
+      - "&7A blade of shadow and flame"
+    particles:
+      ability: "FLAME"
+      ability-count: 26
+    sounds:
+      use: "ITEM_FIRECHARGE_USE"
+      hit: "ENTITY_ENDERMAN_TELEPORT"
+    ability:
+      type: "framework"
+  
+  nature_staff:
+    display-name: "&2Nature Staff"
+    material: "STICK"
+    custom-model-data: 1026
+    damage: 9.0
+    cooldown: 2.3
+    description:
+      - "&7A staff of the natural world"
+    particles:
+      ability: "HAPPY_VILLAGER"
+      ability-count: 20
+    sounds:
+      use: "BLOCK_GRASS_PLACE"
+      hit: "ENTITY_PLAYER_LEVELUP"
+    ability:
+      type: "framework"
+  
+  chaos_axe:
+    display-name: "&5Chaos Axe"
+    material: "DIAMOND_AXE"
+    custom-model-data: 1027
+    damage: 14.0
+    cooldown: 3.8
+    description:
+      - "&7An axe of chaos and disorder"
+    particles:
+      ability: "WITCH"
+      ability-count: 30
+    sounds:
+      use: "ENTITY_WITHER_DEATH"
+      hit: "ENTITY_WITHER_HURT"
+    ability:
+      type: "framework"
+  
+  cosmic_blade:
+    display-name: "&9Cosmic Blade"
+    material: "DIAMOND_SWORD"
+    custom-model-data: 1028
+    damage: 12.5
+    cooldown: 2.9
+    description:
+      - "&7A blade of cosmic energy"
+    particles:
+      ability: "ELECTRIC_SPARK"
+      ability-count: 28
+    sounds:
+      use: "ENTITY_EXPERIENCE_ORB_PICKUP"
+      hit: "BLOCK_NOTE_BLOCK_CHIME"
+    ability:
+      type: "framework"
+  
+  ethereal_bow:
+    display-name: "&dEthereal Bow"
+    material: "BOW"
+    custom-model-data: 1029
+    damage: 10.5
+    cooldown: 2.2
+    description:
+      - "&7A bow of ethereal light"
+    particles:
+      ability: "END_ROD"
+      ability-count: 25
+    sounds:
+      use: "ITEM_BOW_FIRE"
+      hit: "ENTITY_ARROW_HIT"
+    ability:
+      type: "framework"
+  
+  abyssal_reaper:
+    display-name: "&8Abyssal Reaper"
+    material: "DIAMOND_SPADE"
+    custom-model-data: 1030
+    damage: 13.0
+    cooldown: 3.0
+    description:
+      - "&7A reaper from the abyss"
+    particles:
+      ability: "DRAGON_BREATH"
+      ability-count: 32
+    sounds:
+      use: "ENTITY_ENDER_DRAGON_GROWL"
+      hit: "ENTITY_WITHER_HURT"
+    ability:
+      type: "framework"
