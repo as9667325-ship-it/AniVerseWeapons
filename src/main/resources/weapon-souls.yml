@@ -1,0 +1,43 @@
+# Weapon Souls Configuration
+
+souls:
+  soul_of_flames:
+    display-name: "&cSoul of Flames"
+    description: "Unleash inferno abilities"
+    boss-drop: "infernus"
+    hidden-ability: "inferno_ultimate"
+    stat-bonus:
+      damage: 1.20
+      ability-damage: 1.30
+      
+  soul_of_frost:
+    display-name: "&bSoul of Frost"
+    description: "Master ice and cold"
+    boss-drop: "glaciara"
+    hidden-ability: "blizzard_ultimate"
+    stat-bonus:
+      attack-speed: 1.15
+      critical-chance: 0.15
+      
+  soul_of_void:
+    display-name: "&5Soul of Void"
+    description: "Harness void power"
+    boss-drop: "voidemperor"
+    hidden-ability: "void_ultimate"
+    stat-bonus:
+      damage: 1.35
+      ability-damage: 1.40
+      
+  soul_of_light:
+    display-name: "&fSoul of Light"
+    description: "Divine protection"
+    boss-drop: "divinelight"
+    hidden-ability: "divine_ultimate"
+    stat-bonus:
+      lifesteal: 0.25
+      defense-penetration: 0.20
+
+soul-infusion:
+  enabled: true
+  cost-currency: "materials"
+  cost-amount: 1000

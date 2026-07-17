@@ -1,0 +1,37 @@
+# Daily Quests Configuration
+
+daily-quests:
+  reset-time: "00:00"
+  timezone: "UTC"
+  
+quest-types:
+  mob_killer:
+    name: "Mob Slayer"
+    description: "Kill 50 mobs"
+    target: 50
+    reward-materials: 500
+    reward-xp: 1000
+    
+  boss_slayer:
+    name: "Boss Hunter"
+    description: "Defeat 3 bosses"
+    target: 3
+    reward-materials: 2000
+    reward-xp: 5000
+    
+  pvp_master:
+    name: "PvP Champion"
+    description: "Win 10 PvP battles"
+    target: 10
+    reward-materials: 1500
+    reward-xp: 3000
+    
+  legendary_hunter:
+    name: "Legendary Seeker"
+    description: "Obtain 1 legendary weapon"
+    target: 1
+    reward-materials: 5000
+    reward-xp: 10000
+    reward-special: "mystery_crate"
+
+max-quests-per-day: 4

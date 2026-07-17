@@ -1,0 +1,58 @@
+# Gem System Configuration
+
+gems:
+  ruby:
+    display-name: "&cRuby"
+    color: "255,0,0"
+    stat-bonus:
+      damage: 1.15
+      critical-damage: 1.25
+    particles: "FLAME"
+    rarity: "EPIC"
+    
+  sapphire:
+    display-name: "&1Sapphire"
+    color: "0,0,255"
+    stat-bonus:
+      critical-chance: 0.10
+      attack-speed: 1.10
+    particles: "WATER_SPLASH"
+    rarity: "EPIC"
+    
+  emerald:
+    display-name: "&2Emerald"
+    color: "0,255,0"
+    stat-bonus:
+      lifesteal: 0.10
+      defense-penetration: 0.15
+    particles: "HAPPY_VILLAGER"
+    rarity: "EPIC"
+    
+  amethyst:
+    display-name: "&5Amethyst"
+    color: "200,0,255"
+    stat-bonus:
+      ability-damage: 1.20
+    particles: "SPELL_WITCH"
+    rarity: "LEGENDARY"
+    
+  diamond:
+    display-name: "&bDiamond"
+    color: "0,255,255"
+    stat-bonus:
+      damage: 1.20
+      critical-damage: 1.30
+    particles: "ENCHANTMENT_TABLE"
+    rarity: "LEGENDARY"
+    
+  void_gem:
+    display-name: "&8Void Gem"
+    color: "100,0,200"
+    stat-bonus:
+      damage: 1.30
+      ability-damage: 1.30
+      defense-penetration: 0.25
+    particles: "DRAGON_BREATH"
+    rarity: "DIVINE"
+
+gem-sockets: 3

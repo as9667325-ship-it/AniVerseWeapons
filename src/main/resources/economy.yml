@@ -1,0 +1,39 @@
+# Economy Configuration
+# Vault integration for server economy
+
+economy:
+  enabled: true
+  backend: "vault"
+  fallback: "materials"
+
+prices:
+  # Weapon prices
+  weapon-repair-per-1percent: 100
+  weapon-upgrade-base: 1000
+  weapon-upgrade-multiplier: 1.5
+  
+  # Gem prices
+  gem-socket: 500
+  gem-remove: 250
+  
+  # Crate prices
+  crate-common: 500
+  crate-rare: 2000
+  crate-epic: 5000
+  crate-legendary: 15000
+  crate-divine: 50000
+  
+  # Soul prices
+  soul-infusion: 5000
+  
+  # Scroll prices
+  safe-scroll: 10000
+  protection-scroll: 5000
+  
+  # Dungeon entry
+  dungeon-key: 1000
+
+currency:
+  display-name: "Coins"
+  symbol: "$"
+  precision: 2

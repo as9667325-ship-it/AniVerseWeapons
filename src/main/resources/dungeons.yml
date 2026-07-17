@@ -1,0 +1,50 @@
+# Dungeon Configuration
+
+dungeons:
+  dungeon_1:
+    name: "Infernal Lair"
+    difficulty: "Hard"
+    required-players: 1
+    max-players: 5
+    level-requirement: 20
+    spawn-location: "world,100,64,100"
+    boss: "infernus"
+    duration-minutes: 30
+    rewards:
+      experience: 5000
+      materials: 10
+      chance-legendary: 0.25
+    
+  dungeon_2:
+    name: "Frozen Cavern"
+    difficulty: "Hard"
+    required-players: 2
+    max-players: 5
+    level-requirement: 25
+    spawn-location: "world,-100,64,-100"
+    boss: "glaciara"
+    duration-minutes: 30
+    rewards:
+      experience: 5000
+      materials: 10
+      chance-legendary: 0.25
+
+  dungeon_3:
+    name: "Shadow Realm"
+    difficulty: "Extreme"
+    required-players: 3
+    max-players: 5
+    level-requirement: 50
+    spawn-location: "world_the_end,0,64,0"
+    boss: "voidemperor"
+    duration-minutes: 45
+    rewards:
+      experience: 10000
+      materials: 20
+      chance-legendary: 0.40
+
+arena-gen:
+  enabled: true
+  boss-room-radius: 30
+  reward-room-radius: 20
+  difficulty-scaling: true

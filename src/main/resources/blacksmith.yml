@@ -1,0 +1,28 @@
+# Blacksmith Configuration
+
+blacksmith:
+  npc-location: "world,0,64,0"
+  enabled: true
+  
+repair:
+  enabled: true
+  cost-per-percent: 100
+  currency: "materials"
+  
+upgrade:
+  enabled: true
+  cost-multiplier: 1.5
+  currency: "materials"
+  
+gemming:
+  enabled: true
+  socket-gem-cost: 500
+  remove-gem-cost: 250
+  currency: "materials"
+  max-gems-per-weapon: 3
+  
+animations:
+  enabled: true
+  repair-duration: 3
+  upgrade-duration: 5
+  socket-duration: 4

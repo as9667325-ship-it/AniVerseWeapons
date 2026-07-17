@@ -1,0 +1,37 @@
+# Database Configuration
+# SQLite by default, MySQL optional
+
+database:
+  type: "sqlite"
+  # type: "mysql" for MySQL
+  
+  sqlite:
+    file: "plugins/AniVerseWeapons/data/weapons.db"
+    
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "aniverse_weapons"
+    username: "root"
+    password: "password"
+    ssl: false
+    
+  # Connection pool settings
+  max-connections: 10
+  connection-timeout: 5000
+  
+  # Async settings
+  async: true
+  batch-size: 100
+  save-interval-seconds: 300
+
+# Data to save
+save-data:
+  weapon-level: true
+  weapon-xp: true
+  upgrade-level: true
+  weapon-skins: true
+  gems-sockets: true
+  souls: true
+  player-materials: true
+  player-stats: true

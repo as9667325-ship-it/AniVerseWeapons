@@ -1,0 +1,304 @@
+# Boss Configuration
+# Define all 15 custom bosses
+
+bosses:
+  infernus:
+    display-name: "&cInfernus"
+    entity-type: "WITHER"
+    health: 500
+    damage: 25
+    speed: 0.3
+    custom-boss-bar: true
+    music: "minecraft:music.creative"
+    spawn-locations:
+      - "world,100,64,100"
+      - "world_nether,0,65,0"
+    attack-patterns:
+      - fire_breath
+      - summon_minions
+      - meteor_strike
+    loot:
+      - phoenix_blade
+      - inferno_bow
+      - infernal_mace
+    legendary-drop-chance: 0.25
+
+  glaciara:
+    display-name: "&bGlaciara"
+    entity-type: "SNOW_GOLEM"
+    health: 400
+    damage: 20
+    speed: 0.2
+    custom-boss-bar: true
+    music: "minecraft:music.game"
+    spawn-locations:
+      - "world,-100,64,-100"
+    attack-patterns:
+      - ice_storm
+      - freeze_ground
+      - blizzard
+    loot:
+      - frost_staff
+      - glacier_staff
+      - aquatic_trident
+    legendary-drop-chance: 0.25
+
+  shadowlord:
+    display-name: "&8Shadowlord"
+    entity-type: "ENDERMAN"
+    health: 450
+    damage: 23
+    speed: 0.4
+    custom-boss-bar: true
+    music: "minecraft:music.end"
+    spawn-locations:
+      - "world_the_end,0,64,0"
+    attack-patterns:
+      - shadow_clone
+      - teleport_strike
+      - void_pulse
+    loot:
+      - shadow_dagger
+      - void_scythe
+      - void_blade
+    legendary-drop-chance: 0.25
+
+  thunderking:
+    display-name: "&eThunderking"
+    entity-type: "IRON_GOLEM"
+    health: 480
+    damage: 24
+    speed: 0.25
+    custom-boss-bar: true
+    music: "minecraft:music.creative"
+    spawn-locations:
+      - "world,200,64,200"
+    attack-patterns:
+      - lightning_chain
+      - thunder_slam
+      - electric_barrier
+    loot:
+      - lightning_hammer
+      - storm_staff
+      - cosmic_blade
+    legendary-drop-chance: 0.25
+
+  crystalqueen:
+    display-name: "&bCrystal Queen"
+    entity-type: "SHULKER"
+    health: 420
+    damage: 21
+    speed: 0.15
+    custom-boss-bar: true
+    music: "minecraft:music.game"
+    spawn-locations:
+      - "world,300,64,300"
+    attack-patterns:
+      - crystal_prison
+      - barrier_shield
+      - resonance_burst
+    loot:
+      - crystal_staff
+      - celestial_sword
+      - ethereal_bow
+    legendary-drop-chance: 0.25
+
+  infernalapex:
+    display-name: "&cInfernal Apex"
+    entity-type: "BLAZE"
+    health: 410
+    damage: 22
+    speed: 0.35
+    custom-boss-bar: true
+    music: "minecraft:music.nether"
+    spawn-locations:
+      - "world_nether,100,64,100"
+    attack-patterns:
+      - inferno_burst
+      - flame_wall
+      - hell_fire
+    loot:
+      - infernal_mace
+      - magma_hammer
+      - shadowflame_sword
+    legendary-drop-chance: 0.25
+
+  voidemperor:
+    display-name: "&5Void Emperor"
+    entity-type: "ENDER_DRAGON"
+    health: 600
+    damage: 28
+    speed: 0.4
+    custom-boss-bar: true
+    music: "minecraft:music.end"
+    spawn-locations:
+      - "world_the_end,0,128,0"
+    attack-patterns:
+      - void_collapse
+      - dimensional_rift
+      - entropy_wave
+    loot:
+      - void_scythe
+      - void_blade
+      - abyssal_reaper
+    legendary-drop-chance: 0.30
+
+  lunargoddess:
+    display-name: "&fLunar Goddess"
+    entity-type: "WITHER_SKELETON"
+    health: 430
+    damage: 20
+    speed: 0.32
+    custom-boss-bar: true
+    music: "minecraft:music.creative"
+    spawn-locations:
+      - "world,-200,64,-200"
+    attack-patterns:
+      - moonlight_slash
+      - stellar_impact
+      - cosmic_blessing
+    loot:
+      - lunar_dagger
+      - solar_bow
+      - ethereal_bow
+    legendary-drop-chance: 0.25
+
+  titanbeast:
+    display-name: "&7Titan Beast"
+    entity-type: "GIANT"
+    health: 550
+    damage: 26
+    speed: 0.2
+    custom-boss-bar: true
+    music: "minecraft:music.game"
+    spawn-locations:
+      - "world,400,64,400"
+    attack-patterns:
+      - titan_stomp
+      - shockwave
+      - mountain_crush
+    loot:
+      - titan_sword
+      - obsidian_axe
+      - holy_mace
+    legendary-drop-chance: 0.25
+
+  naturewarden:
+    display-name: "&2Nature Warden"
+    entity-type: "IRON_GOLEM"
+    health: 400
+    damage: 19
+    speed: 0.3
+    custom-boss-bar: true
+    music: "minecraft:music.creative"
+    spawn-locations:
+      - "world,-300,64,300"
+    attack-patterns:
+      - thorn_barrage
+      - forest_surge
+      - nature_heal
+    loot:
+      - forest_bow
+      - nature_staff
+      - dragon_claw
+    legendary-drop-chance: 0.25
+
+  spectralking:
+    display-name: "&fSpectral King"
+    entity-type: "PHANTOM"
+    health: 390
+    damage: 21
+    speed: 0.5
+    custom-boss-bar: true
+    music: "minecraft:music.end"
+    spawn-locations:
+      - "world,500,128,500"
+    attack-patterns:
+      - phantom_swarm
+      - ghostly_possession
+      - temporal_distortion
+    loot:
+      - spectral_staff
+      - temporal_pickaxe
+      - cosmic_blade
+    legendary-drop-chance: 0.25
+
+  chaosmaster:
+    display-name: "&5Chaos Master"
+    entity-type: "WITHER"
+    health: 520
+    damage: 27
+    speed: 0.38
+    custom-boss-bar: true
+    music: "minecraft:music.nether"
+    spawn-locations:
+      - "world,-400,64,-400"
+    attack-patterns:
+      - chaos_eruption
+      - reality_fracture
+      - pandemonium
+    loot:
+      - chaos_axe
+      - void_scythe
+      - abyssal_reaper
+    legendary-drop-chance: 0.28
+
+  dragonlord:
+    display-name: "&5Dragon Lord"
+    entity-type: "ENDER_DRAGON"
+    health: 580
+    damage: 29
+    speed: 0.42
+    custom-boss-bar: true
+    music: "minecraft:music.end"
+    spawn-locations:
+      - "world_the_end,100,128,100"
+    attack-patterns:
+      - dragon_breath
+      - meteor_rain
+      - dragon_roar
+    loot:
+      - dragon_claw
+      - cosmic_blade
+      - void_blade
+    legendary-drop-chance: 0.28
+
+  divinelight:
+    display-name: "&c✦ Divine Light ✦"
+    entity-type: "ARMOR_STAND"
+    health: 500
+    damage: 25
+    speed: 0.28
+    custom-boss-bar: true
+    music: "minecraft:music.creative"
+    spawn-locations:
+      - "world,600,64,600"
+    attack-patterns:
+      - holy_judgment
+      - celestial_smite
+      - divine_ascension
+    loot:
+      - celestial_sword
+      - holy_mace
+      - eternal_staff
+    legendary-drop-chance: 0.30
+
+  abyss_keeper:
+    display-name: "&8Abyss Keeper"
+    entity-type: "WITHER"
+    health: 560
+    damage: 30
+    speed: 0.36
+    custom-boss-bar: true
+    music: "minecraft:music.end"
+    spawn-locations:
+      - "world,-500,0,-500"
+    attack-patterns:
+      - abyssal_tear
+      - void_consumption
+      - dark_ascension
+    loot:
+      - abyssal_reaper
+      - void_scythe
+      - void_blade
+    legendary-drop-chance: 0.30

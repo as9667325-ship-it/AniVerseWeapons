@@ -1,0 +1,47 @@
+# World Events Configuration
+
+world-events:
+  enabled: true
+  min-interval-minutes: 30
+  max-interval-minutes: 60
+  announcement-prefix: "&b&l[WORLD EVENT] &r"
+
+events:
+  meteor_shower:
+    display-name: "&cMeteor Shower"
+    description: "Meteors rain from the sky!"
+    duration-seconds: 60
+    radius: 100
+    damage: 20
+    loot-chance: 0.20
+    particles: "FLAME"
+    
+  blood_moon:
+    display-name: "&c&lBlood Moon"
+    description: "The moon turns red... mobs grow stronger!"
+    duration-seconds: 300
+    mob-damage-multiplier: 1.5
+    mob-health-multiplier: 1.3
+    loot-bonus: 1.5
+    
+  dragon_invasion:
+    display-name: "&5Dragon Invasion"
+    description: "Dragons descended upon the world!"
+    duration-seconds: 120
+    dragon-count: 3
+    reward-materials: 5000
+    
+  treasure_rain:
+    display-name: "&6Treasure Rain"
+    description: "Treasures falling from the sky!"
+    duration-seconds: 90
+    spawn-radius: 50
+    items-per-spawn: 5
+    
+  void_rift:
+    display-name: "&8Void Rift"
+    description: "The void opens!"
+    duration-seconds: 150
+    void-damage: 5
+    void-radius: 30
+    rewards-multiplier: 2.0

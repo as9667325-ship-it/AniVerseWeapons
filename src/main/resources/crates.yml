@@ -1,0 +1,62 @@
+# Crate System Configuration
+
+crates:
+  common:
+    display-name: "&7Common Crate"
+    animation-duration: 2
+    items:
+      - iron_sword,1,10%
+      - gold_sword,1,5%
+      - diamond_sword,1,2%
+    rewards:
+      materials: 100
+      xp: 100
+      
+  rare:
+    display-name: "&3Rare Crate"
+    animation-duration: 3
+    items:
+      - diamond_sword,1,20%
+      - rare_weapon,1,30%
+      - rare_gem,1,15%
+    rewards:
+      materials: 500
+      xp: 500
+      
+  epic:
+    display-name: "&9Epic Crate"
+    animation-duration: 4
+    items:
+      - epic_weapon,1,40%
+      - epic_gem,1,25%
+      - gem_token,2,15%
+    rewards:
+      materials: 1500
+      xp: 1500
+      
+  legendary:
+    display-name: "&6Legendary Crate"
+    animation-duration: 5
+    items:
+      - legendary_weapon,1,60%
+      - legendary_gem,1,50%
+      - upgrade_scroll,1,30%
+    rewards:
+      materials: 5000
+      xp: 5000
+      
+  divine:
+    display-name: "&c✦ Divine Crate ✦"
+    animation-duration: 6
+    items:
+      - divine_weapon,1,80%
+      - void_gem,1,60%
+      - eternal_scroll,1,50%
+    rewards:
+      materials: 10000
+      xp: 10000
+
+crate-animations:
+  enabled: true
+  particle-type: "ENCHANTMENT_TABLE"
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
